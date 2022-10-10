@@ -1,0 +1,224 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-rows: 4rem auto;
+  gap: 1rem;
+  font-family: "Poppins", sans-serif;
+  background: url("https://images.unsplash.com/photo-1543872084-c7bd3822856f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dG93bnxlbnwwfHwwfHw%3D&w=1000&q=80")
+    no-repeat center / cover;
+  background-color: grey;
+}
+
+.name {
+  color: white;
+  padding: 2rem;
+  border: 1px solid transparent;
+  background-image: linear-gradient(
+    to left top,
+    #4f23e0,
+    #643adf,
+    #764ddf,
+    #855fdd,
+    #9371dc,
+    #a472d3,
+    #b173cb,
+    #bb76c3,
+    #c869ae,
+    #d05d97,
+    #d3547e,
+    #d14e64
+  );
+  text-align: center;
+  font-size: 3rem;
+}
+
+.name p {
+  padding-top: 2.5rem;
+  font-family: "Oswald", sans-serif;
+}
+
+.container {
+  padding: 2rem 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.wrapper {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 1rem;
+}
+
+.date {
+  color: #f19066;
+  text-align: center;
+}
+
+.date h1 {
+  font-size: 5rem;
+  font-family: "Oswald", sans-serif;
+}
+
+.date h2 {
+  font-size: 3.5rem;
+  font-family: "Oswald", sans-serif;
+}
+
+.calendar {
+  position: relative;
+  width: 300px;
+  background-color: #fff;
+  box-sizing: border-box;
+  box-shadow: 0 5px 50px rgba(#000, 0.5);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.calendar:hover {
+  transform: scale(1.03);
+  -webkit-transform: scale(1.03);
+  -moz-transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  -o-transform: scale(1.03);
+}
+
+.calendar__picture {
+  position: relative;
+  height: 200px;
+  padding: 20px;
+  color: #fff;
+  background: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)),
+    url("https://64.media.tumblr.com/cca4f06484b447c0687f0325af5b38c9/428a8db1dc8ae92f-87/s1280x1920/7c751558b1d93e15c2d885cff2162ddb95059b8d.gif")
+      no-repeat center / cover;
+  text-shadow: 0 2px 2px rgba(#000, 0.2);
+  box-sizing: border-box;
+}
+
+.calendar__picture::before {
+  content: "";
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  background: linear-gradient(to top, rgba(#000, 0.25), rgba(#000, 0.1));
+}
+
+.calendar__picture h2 {
+  font-size: 1.75rem;
+}
+
+.calendar__picture h3 {
+  font-size: 1.5rem;
+}
+
+.calendar__date {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
+  grid-gap: 10px;
+  box-sizing: border-box;
+}
+
+.calendar__day {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  font-weight: 600;
+  color: #262626;
+  border: 1px solid black;
+}
+
+.calendar__day:nth-child(7) {
+  color: #ff685d;
+}
+
+.calendar__number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  color: #262626;
+  border: 1px solid black;
+}
+
+.calendar__number:nth-child(7n) {
+  color: #ff685d;
+  font-weight: 700;
+}
+
+.calendar__number--current:hover {
+  background-color: #009688;
+  color: #fff !important;
+  font-weight: 700;
+  cursor: pointer;
+  border: transparent;
+}
+
+.january {
+  text-align: center;
+  color: #fff200;
+}
+
+.february {
+  text-align: center;
+  color: #18dcff;
+}
+
+.march {
+  text-align: center;
+  color: #4f57ff;
+}
+
+.april {
+  text-align: center;
+  color: #32ff7e;
+}
+
+.may {
+  text-align: center;
+  color: #ff3f34;
+}
+
+.june {
+  text-align: center;
+  color: #cd29e2;
+}
+
+.july {
+  text-align: center;
+  color: #fc427b;
+}
+
+.august {
+  text-align: center;
+  color: #b0d9ff;
+}
+
+.september {
+  text-align: center;
+  color: #9990fd;
+}
+
+.october {
+  text-align: center;
+  color: #a6bece;
+}
+
+.november {
+  text-align: center;
+  color: #22a6b3;
+}
+
+.december {
+  text-align: center;
+  color: #ffc814;
+}
